@@ -1,6 +1,6 @@
 # Mini-Project
-# “ IMPLEMENTATION OF TRAINING MODEL FOR TUBERCULOSIS DETECTION USING CNN”
-# Abstract
+## “ IMPLEMENTATION OF TRAINING MODEL FOR TUBERCULOSIS DETECTION USING CNN”
+### Abstract
 Tuberculosis (TB) is a major public health problem worldwide, particularly in developing
 countries where the burden of the disease is highest. The early detection and accurate diagnosis of
 TB are crucial for successful treatment and prevention of the spread of the disease. However,
@@ -9,7 +9,7 @@ labor-intensive, and require specialized laboratory equipment and trained person
 there is a need for faster, more efficient, and accurate methods for TB diagnosis. In recent years,
 machine learning algorithms, particularly convolutional neural networks (CNNs), have shown
 great potential for the detection of TB using medical images, such as chest radiographs.
-# Introduction
+### Introduction
 Tuberculosis (TB) remains a public health problem, even after 100 years of discovery of the
 microorganism, highly effective drugs and vaccines are available. It is classified as one of
 the top ten reasons for death from an infectious agent according to WHO.
@@ -19,7 +19,7 @@ processed to remove any noise or artifacts, and fed into the CNN model for class
 The CNN model was trained on a large dataset of chest radiographs to detect the presence
 of TB. The model architecture consisted of multiple convolutional and pooling layers,
 followed by fully connected layers for classification.
-# Literature Survey
+### Literature Survey
 1.&quot;Detection of Tuberculosis from Chest Radiograph using Deep Learning: A Systematic
 Review and Meta-analysis&quot; by V.G. Nair et al. (2020)
 Tuberculosis (TB) is a leading cause of mortality and morbidity worldwide. Chest
@@ -47,7 +47,9 @@ review the state-of-the-art in CNN-based TB detection from CXR, including pre-pr
 techniques, network architectures, and evaluation metrics. They also discussed the challenges and
 limitations of current approaches, and highlight future research directions.
 
-# Objectives
+### Objectives
 1.To detect tuberculosis in a person from the abnormalities present in the chest X-Ray1
 Provide the project as a service that can be used by the end users
 2.To predict Accurately Tuberculosis from the given X-Ray image
+### BLOCK DIAGRAM
+![IMG_20230613_151541](https://github.com/nisartth/Mini-Project/assets/94008426/d3f74363-bfff-4fac-bc07-924ec656074d)
