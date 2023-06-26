@@ -1,55 +1,95 @@
 # Mini-Project
-## “ IMPLEMENTATION OF TRAINING MODEL FOR TUBERCULOSIS DETECTION USING CNN”
+## “DETECTION OF TUBERCULOSIS USING RESNET”
 ### Abstract
-Tuberculosis (TB) is a major public health problem worldwide, particularly in developing
-countries where the burden of the disease is highest. The early detection and accurate diagnosis of
-TB are crucial for successful treatment and prevention of the spread of the disease. However,
-traditional methods of TB diagnosis, such as sputum microscopy and culture, are time-consuming,
-labor-intensive, and require specialized laboratory equipment and trained personnel. Therefore,
-there is a need for faster, more efficient, and accurate methods for TB diagnosis. In recent years,
-machine learning algorithms, particularly convolutional neural networks (CNNs), have shown
-great potential for the detection of TB using medical images, such as chest radiographs.
+Tuberculosis (TB) is a global health concern, and early and accurate detection is essential for
+effective disease management. This project proposes a deep learning-based approach for
+tuberculosis detection using the ResUNet architecture. By incorporating the advantages of U-
+Net and ResNet, the ResUNet model aims to enhance the accuracy and efficiency of
+tuberculosis detection from medical images. The ResUNet architecture is designed to
+leverage the strengths of U-Net, which is widely used in medical image segmentation, and
+ResNet, a popular deep learning architecture known for its ability to mitigate the vanishing
+gradient problem. By combining these two architectures, ResUNet aims to capture both local
+and global features, allowing for more effective representation of tuberculosis-related patterns
+and characteristics in medical images.
+
+To facilitate training and evaluation of the ResUNet model, a diverse dataset of chest X-rays
+and CT scans, annotated with tuberculosis infection labels, is collected. Preprocessing
+techniques, such as resizing, normalization, and enhancement, are applied to ensure
+consistent and optimal input for the model.The dataset is then split into training, validation,
+and testing subsets. The ResUNet model is trained on the training dataset using optimization
+algorithms like stochastic gradient descent or Adam, optimizing the model parameters based
+on the comparison of predicted outputs with the ground truth annotations.
+
+During the training process, the model&#39;s performance is assessed using the validation dataset.
+This allows for monitoring and fine-tuning of hyperparameters, such as learning rate and
+regularization techniques, to achieve optimal model performance and prevent overfitting.
+After training, the performance of the trained ResUNet model is evaluated on the testing
+dataset. Various evaluation metrics, including accuracy, precision, recall, and F1-score, are
+calculated to assess the model&#39;s ability to accurately detect tuberculosis in medical images.
+
+The successful implementation of the ResUNet project for tuberculosis detection holds
+promise in improving early diagnosis and treatment outcomes for TB patients. By harnessing
+the power of deep learning and combining the strengths of U-Net and ResNet, the ResUNet
+model demonstrates its potential as an effective tool for tuberculosis detection from medical
+images.
 ### Introduction
-Tuberculosis (TB) remains a public health problem, even after 100 years of discovery of the
-microorganism, highly effective drugs and vaccines are available. It is classified as one of
-the top ten reasons for death from an infectious agent according to WHO.
-In this study, we propose a system for the detection of TB using CNN architecture. The
-system takes user input in the form of chest radiographs. The uploaded images are then pre-
-processed to remove any noise or artifacts, and fed into the CNN model for classification.
-The CNN model was trained on a large dataset of chest radiographs to detect the presence
-of TB. The model architecture consisted of multiple convolutional and pooling layers,
-followed by fully connected layers for classification.
+Tuberculosis (TB) remains one of the deadliest infectious diseases globally, with millions of
+new cases reported each year. Early detection and prompt treatment are crucial for controlling
+the spread of TB and improving patient outcomes. Medical imaging, such as chest X-rays and
+CT scans, plays a vital role in the diagnosis and monitoring of TB. However, accurately
+interpreting these images can be challenging, requiring specialized expertise and time.To
+address this challenge, deep learning techniques have gained significant attention in medical
+image analysis, offering the potential to automate and enhance TB detection. Among these
+techniques, the ResUNet architecture has emerged as a powerful tool for improving the
+accuracy and efficiency of TB detection from medical images.
+
+The ResUNet architecture is a fusion of two well-established deep learning architectures: U-
+Net and ResNet. U-Net is renowned for its effectiveness in image segmentation tasks,
+enabling the precise delineation of regions of interest. On the other hand, ResNet&#39;s residual
+connections address the problem of vanishing gradients, facilitating the flow of information
+through the network. By combining the strengths of these architectures, ResUNet aims to
+capture both local and global features relevant to TB detection, enabling comprehensive
+analysis of medical images.
 ### Literature Survey
-1.&quot;Detection of Tuberculosis from Chest Radiograph using Deep Learning: A Systematic
-Review and Meta-analysis&quot; by V.G. Nair et al. (2020)
-Tuberculosis (TB) is a leading cause of mortality and morbidity worldwide. Chest
+1,V.G. Nair et.al [1] “Detection of Tuberculosis from Chest Radiograph using Deep Learning:
+A Systematic Review and Meta-analysis” (2020)
+Abstract: Tuberculosis (TB) is a leading cause of mortality and morbidity worldwide. Chest
 radiographs (CXRs) are commonly used in TB diagnosis, and machine learning (ML)
-algorithms, especially deep learning (DL), have shown promise in CXR-based TB
-detection. In this systematic review and meta-analysis, they evaluate the performance of
-DL-based algorithms for TB detection from CXR. They found that DL-based algorithms
-had high sensitivity and specificity in detecting TB from CXR, with an overall pooled
-sensitivity of 92.2% and specificity of 90.4%. Their findings suggest that DL-based
-algorithms have the potential to improve TB diagnosis, particularly in resource-limited
-settings.
-2. &quot;Automatic Tuberculosis Screening System Based on Deep Learning and Chest X-Ray Images&quot;
-by Y. Zhang et al. (2021)
-Tuberculosis (TB) is a major global health problem, and early detection is critical for effective
-treatment and disease control. In this study, we propose an automatic TB screening system based
-on deep learning and chest X-ray images. The system uses a convolutional neural network (CNN)
-to classify chest X-ray images as either TB-positive or TB-negative. They evaluated the system on
-a dataset of 662 TB-positive and 662 TB-negative chest X-ray images.
-3. &quot;Tuberculosis Detection from Chest Radiographs Using Convolutional Neural Networks: A
-Survey&quot; by S. Zafar et al. (2020)
-Tuberculosis (TB) is a major public health issue worldwide, and chest radiographs (CXRs) are
-commonly used in TB diagnosis. Machine learning (ML) algorithms, particularly convolutional
-neural networks (CNNs), have shown promise in CXR-based TB detection. In this survey, they
-review the state-of-the-art in CNN-based TB detection from CXR, including pre-processing
-techniques, network architectures, and evaluation metrics. They also discussed the challenges and
-limitations of current approaches, and highlight future research directions.
+algorithms, especially deep learning (DL), have shown promise in CXR-based TB detection.
+In this systematic review and meta-analysis, we evaluate the performance of DL-based
+algorithms for TB detection from CXR. We found that DL-based algorithms had high
+sensitivity and specificity in detecting TB from CXR, with an overall pooled sensitivity of
+92.2% and specificity of 90.4%. Our findings suggest that DL-based algorithms have the
+potential to improve TB diagnosis, particularly in resource-limited settings.
+2,Y. Zhang et al [2],Automatic Tuberculosis Screening System Based on Deep Learning and
+Chest X-Ray Images&quot; (2021) aimed to develop an automatic TB screening system using deep
+learning and chest X-ray images. The authors recognized the significance of early detection
+in effectively treating and controlling tuberculosis (TB), which remains a major global health
+problem.In this study, the researchers proposed a system that utilizes a convolutional neural
+network (CNN) for the classification of chest X-ray images as either TB-positive or TB-
+negative. The deep learning model was trained on a dataset consisting of 662 TB-positive and
+662 TB-negative chest X-ray images.
+3,H. Azizpour et al. [3] titled &quot;Tuberculosis Detection using Convolutional Neural Networks
+with Lung Segmentation&quot; (2019) aimed to propose a deep learning approach for tuberculosis
+(TB) detection using convolutional neural networks (CNNs) with lung segmentation. The
+authors acknowledged that TB is a significant global public health issue, and accurate and
+timely diagnosis is essential for effective treatment and disease control.
+In this study, the researchers introduced a deep learning framework that incorporated CNNs
+with lung segmentation for TB detection. Lung segmentation is a critical step in isolating the
+lung region from chest X-ray images, allowing the model to focus specifically on the areas
+relevant to TB diagnosis.
 
 ### Objectives
-1.To detect tuberculosis in a person from the abnormalities present in the chest X-Ray1
-Provide the project as a service that can be used by the end users
-2.To predict Accurately Tuberculosis from the given X-Ray image
-### BLOCK DIAGRAM
-![IMG_20230613_151541](https://github.com/nisartth/Mini-Project/assets/94008426/d3f74363-bfff-4fac-bc07-924ec656074d)
+This project aims to delve deeply into the development and implementation of a robust deep
+learning model using the ResUNet architecture for tuberculosis detection. The ResUNet
+model is a novel combination of the U-Net and ResNet architectures, specifically designed to
+enhance the accuracy and efficiency of tuberculosis detection from medical images.To begin,
+a comprehensive dataset of chest X-rays and CT scans will be curated, ensuring an adequate
+representation of tuberculosis-related patterns and characteristics. This dataset will be
+meticulously annotated with labels indicating the presence or absence of tuberculosis
+infection. Next, a series of preprocessing steps will be applied to the medical images. This
+includes resizing the images to a standardized size, normalizing the pixel values to a common
+range, and potentially applying additional enhancements, such as contrast adjustment or noise
+reduction. These preprocessing techniques aim to optimize the input images and improve the
+model&#39;s ability to detect tuberculosis-related features.
+
