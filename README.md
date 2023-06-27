@@ -93,3 +93,30 @@ range, and potentially applying additional enhancements, such as contrast adjust
 reduction. These preprocessing techniques aim to optimize the input images and improve the
 model&#39;s ability to detect tuberculosis-related features.
 
+### Problem Statement
+The problem statement of this project is to address the challenges in tuberculosis (TB) detection by extending the capabilities of deep learning using the ResUNet architecture. The aim is to develop a robust and accurate system that can effectively analyze medical images, such as chest X-rays or CT scans, for the detection of TB. By leveraging the ResUNet architecture, which combines the strengths of U-Net and ResNet, the project seeks to enhance the accuracy and efficiency of TB diagnosis. The project further aims to overcome the limitations of traditional diagnostic methods, particularly in resource-limited settings where access to specialized healthcare facilities and expertise may be limited. By extending the capabilities of deep learning with ResUNet, the project aspires to provide a reliable and scalable solution for early TB detection, leading to timely interventions, improved patient outcomes, and effective disease control.
+
+### References
+1. Suryawanshi, P. B., & Kulkarni, P. S. (2021). Tuberculosis detection using ResNet-50 with lung X-ray
+images. International Journal of Scientific Research in Computer Science, Engineering and Information
+Technology, 7(2), 466-471.
+
+2. Islam, M. T., & Rahman, M. (2020). Tuberculosis detection from chest X-ray images using deep
+learning techniques. In 2020 International Conference on Electrical, Computer and Communication
+Engineering (ECCE) (pp. 1-4). IEEE.
+
+3. Kumar, V., & Gautam, A. (2020). Detection of tuberculosis using deep learning models. In 2020
+International Conference on Computer Communication and Informatics (ICCCI) (pp. 1-5). IEEE.
+
+4. Ahmed, H. M., Mohamed, M. A., & Zahir, I. (2020). Tuberculosis classification using deep learning
+techniques. In 2020 17th International Multi-Conference on Systems, Signals & Devices (SSD) (pp.
+79-84). IEEE.
+
+5. Rajpurkar, P., Irvin, J., Ball, R. L., Zhu, K., Yang, B., Mehta, H., ... & Lungren, M. P. (2017). Deep
+learning for chest radiograph diagnosis: A retrospective comparison of the CheXNeXt algorithm to
+practicing radiologists.PLoS medicine, 14(12), e1002686.
+
+6. Kermany, D. S., Goldbaum, M., Cai, W., Valentim, C. C., Liang, H., Baxter, S. L., ... & Yan, K. (2018).
+Identifying medical diagnoses and treatable diseases by image-based deep learning. Cell, 172(5),
+1122-1131.
+   
