@@ -119,4 +119,9 @@ practicing radiologists.PLoS medicine, 14(12), e1002686.
 6. Kermany, D. S., Goldbaum, M., Cai, W., Valentim, C. C., Liang, H., Baxter, S. L., ... & Yan, K. (2018).
 Identifying medical diagnoses and treatable diseases by image-based deep learning. Cell, 172(5),
 1122-1131.
+
+![IMG_20230627_144600](https://github.com/nisartth/Mini-Project/assets/94008426/d9b4687f-c411-40a7-9f9f-d715505d7a7e)
+
+
+
    
