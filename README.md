@@ -11,7 +11,7 @@ ResNet, a popular deep learning architecture known for its ability to mitigate t
 gradient problem. By combining these two architectures, ResUNet aims to capture both local
 and global features, allowing for more effective representation of tuberculosis-related patterns
 and characteristics in medical images.
-
+#
 To facilitate training and evaluation of the ResUNet model, a diverse dataset of chest X-rays
 and CT scans, annotated with tuberculosis infection labels, is collected. Preprocessing
 techniques, such as resizing, normalization, and enhancement, are applied to ensure
