@@ -11,7 +11,7 @@ ResNet, a popular deep learning architecture known for its ability to mitigate t
 gradient problem. By combining these two architectures, ResUNet aims to capture both local
 and global features, allowing for more effective representation of tuberculosis-related patterns
 and characteristics in medical images.
-#
+
 To facilitate training and evaluation of the ResUNet model, a diverse dataset of chest X-rays
 and CT scans, annotated with tuberculosis infection labels, is collected. Preprocessing
 techniques, such as resizing, normalization, and enhancement, are applied to ensure
@@ -32,6 +32,7 @@ promise in improving early diagnosis and treatment outcomes for TB patients. By 
 the power of deep learning and combining the strengths of U-Net and ResNet, the ResUNet
 model demonstrates its potential as an effective tool for tuberculosis detection from medical
 images.
+#
 ### Introduction
 Tuberculosis (TB) remains one of the deadliest infectious diseases globally, with millions of
 new cases reported each year. Early detection and prompt treatment are crucial for controlling
@@ -50,6 +51,7 @@ connections address the problem of vanishing gradients, facilitating the flow of
 through the network. By combining the strengths of these architectures, ResUNet aims to
 capture both local and global features relevant to TB detection, enabling comprehensive
 analysis of medical images.
+#
 ### Literature Survey
 1,V.G. Nair et.al [1] “Detection of Tuberculosis from Chest Radiograph using Deep Learning:
 A Systematic Review and Meta-analysis” (2020)
@@ -78,7 +80,7 @@ In this study, the researchers introduced a deep learning framework that incorpo
 with lung segmentation for TB detection. Lung segmentation is a critical step in isolating the
 lung region from chest X-ray images, allowing the model to focus specifically on the areas
 relevant to TB diagnosis.
-
+#
 ### Objectives
 This project aims to delve deeply into the development and implementation of a robust deep
 learning model using the ResUNet architecture for tuberculosis detection. The ResUNet
@@ -92,10 +94,10 @@ includes resizing the images to a standardized size, normalizing the pixel value
 range, and potentially applying additional enhancements, such as contrast adjustment or noise
 reduction. These preprocessing techniques aim to optimize the input images and improve the
 model&#39;s ability to detect tuberculosis-related features.
-
+#
 ### Problem Statement
 The problem statement of this project is to address the challenges in tuberculosis (TB) detection by extending the capabilities of deep learning using the ResUNet architecture. The aim is to develop a robust and accurate system that can effectively analyze medical images, such as chest X-rays or CT scans, for the detection of TB. By leveraging the ResUNet architecture, which combines the strengths of U-Net and ResNet, the project seeks to enhance the accuracy and efficiency of TB diagnosis. The project further aims to overcome the limitations of traditional diagnostic methods, particularly in resource-limited settings where access to specialized healthcare facilities and expertise may be limited. By extending the capabilities of deep learning with ResUNet, the project aspires to provide a reliable and scalable solution for early TB detection, leading to timely interventions, improved patient outcomes, and effective disease control.
-
+#
 ### References
 1. Suryawanshi, P. B., & Kulkarni, P. S. (2021). Tuberculosis detection using ResNet-50 with lung X-ray
 images. International Journal of Scientific Research in Computer Science, Engineering and Information
